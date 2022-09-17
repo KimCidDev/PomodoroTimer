@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /*COLORS*/
+  --bg-color: #46A064;
+  --font-primary: #94221F;
+  --bg-contrast: #94221F;
+  --svg-fill: #E05F5C;
+  /*DARK MODE COLORS*/
+  --bg-color-dark: #2A5E3B;
+  --font-primary-dark: #541413;
+  --bg-contrast-dark: #541413;
+  --svg-fill-dark: #541413;
+  --highlight-dark: #79140f;
+  /*FONTS*/   
+  --main-font: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 12.5rem;
+  font-family: var(--main-font);
+
+  max-height: 100vh;
+  display: grid;
+}
+
+main {
+  align-self: center;
+  width: clamp(20rem, 30rem, 30rem);
+}
+
+body.darkMode {
+  background-color: var(--bg-color-dark)
+}
+
+.playButton.darkMode svg path,
+.pauseButton.darkMode svg path,
+.setButton.darkMode svg path,
+.stopButton.darkMode svg path, 
+.increaseVolume.darkMode svg path,
+.decreaseVolume.darkMode svg path {
+  fill: #541413;
+}
+
+span.darkMode {
+  color: var(--font-primary-dark);
+}
+
+svg.coffeeShop.darkMode,
+svg.fire.darkMode,
+svg.rain.darkMode,
+svg.forest.darkMode {
+  background-color: var(--font-primary-dark);
+}
+
+svg.coffeeShop.darkMode:hover,
+svg.fire.darkMode:hover,
+svg.rain.darkMode:hover,
+svg.forest.darkMode:hover {
+  background-color: --highlight-dark;
+}
+
+svg.coffeeShop.darkMode path,
+svg.fire.darkMode path,
+svg.rain.darkMode path,
+svg.forest.darkMode path {
+  fill: #2A5E3B;
+}
+
+
+.darkModeButton {
+  display: grid;
+  align-self: end;
+  justify-self: end;
+}
+
+.darkModeButton svg {
+  height: 5rem;
+  width: 5rem;
+  padding: 0 1rem 1rem 0;
+}
+
+.darkModeButton svg path{
+  fill: var(--bg-contrast);
+}
+
+.soundType {
+  align-self: center;
+  width: clamp(20rem, 30rem, 30rem);
+}
+
+.wholesystem {
+  display: flex;
+  gap: clamp(20%, 13rem, 100%);
+  justify-content: center;
+  width: clamp(30%, 150rem, 100%);
+  min-height: 93vh;
+}
+
+.clock {
+  display: flex;
+  width: clamp(32rem, 25rem, 50rem);
+}
+
+.timerControls {
+ display: flex;
+ justify-content: space-between;
+ width: clamp(32rem, 25rem, 50rem);
+}
+
+.timerControls button {
+  background-color: transparent;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.timerControls button svg path {
+  fill: var(--bg-contrast);
+}
+
+.timerControls button svg path:hover {
+  fill: #732d29;
+}
+
+span {
+  color: var(--font-primary);
+}
+
+.soundType {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 3rem, 5rem);
+}
+
+.soundType svg {
+  background-color: var(--bg-contrast);
+
+  cursor: pointer;
+
+  border-radius: 15px;
+  padding: 3rem;
+  height: clamp(5rem, 11rem, 11rem);
+  width: clamp(5rem, 11rem, 11rem);
+}
+
+.soundType svg:hover {
+  background-color: #88221F;
+}
+
+.soundType svg path {
+  fill: var(--svg-fill);
+}
+
+/* HIDE ELEMENTS */
+
+.hidden {
+  display: none;
+
+}
