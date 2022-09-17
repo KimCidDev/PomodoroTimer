@@ -48,7 +48,7 @@ export default function ({ controller, time, audioo }) {
 
   setButton.addEventListener('click', function () {
     userChoice =
-      prompt('De quandos minutos você precisa?') || minutesOnScreen.textContent
+      prompt('De quantos minutos você precisa?') || minutesOnScreen.textContent
     time.currentTime(userChoice, 0)
   })
 
