@@ -171,7 +171,7 @@ span {
 @media (max-width: 700px) {
   .wholesystem {
     display: grid;
-    gap: 5rem;
+    gap: 2rem;
     max-width: 117rem;
   }
 
